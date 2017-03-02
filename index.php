@@ -1,7 +1,7 @@
 <?php require('caesar.php'); ?>
 <?php require('vigenere.php'); ?>
 <?php require('parameters.php'); ?>
-<?php include_once('sanitize.php'); ?>
+<?php include_once('toolsOriginal.php'); ?>
 
 
 <!DOCTYPE html>
@@ -25,6 +25,11 @@
 			<div class="quote">
 				<p>If MESS is the future of encryption, better clean out your closet!</p>
 				<br>
+				<h4>Below, you can enter a secret message of your choice and we will encrpyt it based on
+				the cipher and key you choose. The Caeser cipher is less secure and requires a positive integer
+				key. The Vigenere cipher is more secure and requires a string of alphabetical characters (e.g. a word)
+				as the key.</h4>
+				<br>
 			</div>
 
 			<form method='POST' action='index.php'>
@@ -37,10 +42,10 @@
 
 				<br>
 				<label for='plaintext'>Message to be encrypted</label>
-				<input type='text' name='plaintext' id='plaintext'>
+				<input type='text' required name='plaintext' id='plaintext'>
 
 				<label for='key'>Encryption Key</label>
-				<input type='text' name='key' id='key'>
+				<input type='text' required name='key' id='key'>
 
 				<br>
 				<input type='checkbox' name='obfuscate' id='obfuscate'>

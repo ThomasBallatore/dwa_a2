@@ -1,11 +1,13 @@
 <?php
 
-include_once('sanitize.php');
+include_once('toolsOriginal.php');
 
 function vigenere($plaintext, $key){
 
-    $plaintext = (isset($_POST['plaintext'])) ? $_POST['plaintext'] : '';
-    $key = (isset($_POST['key'])) ? $_POST['key'] : 0;
+    // sets and sanitizes plaintext and key inputs
+    $plaintext = (isset($_POST['plaintext'])) ? sanitize($_POST['plaintext']) : '';
+    $key = (isset($_POST['key'])) ? sanitize($_POST['key']) : 0;
+
     $obfuscate = (isset($_POST['obfuscate'])) ? true : false;
 
     # MAIN BODY OF PROGRAM
