@@ -36,3 +36,7 @@ input[type='checkbox'] + label {
 .quote {
   font-style: italic;
 }
+
+.btn btn-primary btn-small {
+    value="Encrypt";
+}
