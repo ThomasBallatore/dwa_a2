@@ -1,0 +1,21 @@
+/*  a2.css */
+
+body {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	color: #333;
+}
+
+.container {
+	width: 100%;
+    text-align: left;
+	margin: auto;
+}
+
+.quote {
+    font-style: italic;
+}
+
+.report {
+    color: white;
+}

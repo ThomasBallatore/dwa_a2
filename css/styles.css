@@ -1,0 +1,38 @@
+body {
+    padding:25px;
+}
+
+footer {
+    margin-top:50px;
+}
+
+.alert, .btn {
+    margin-top:10px;
+}
+
+label, legend {
+    /*display:block;*/
+    margin-top:20px;
+    margin-bottom:0;
+}
+
+input, textarea, select {
+    display:block;
+}
+
+input[type='checkbox'], input[type='radio'] {
+    display:inline;
+}
+
+input[type='checkbox'] + label {
+    display:inline;
+}
+
+.alert-success {
+    color: #dff0d8;
+    background-color: #dff0d8;
+}
+
+.quote {
+  font-style: italic;
+}
