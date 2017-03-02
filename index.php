@@ -1,6 +1,8 @@
 <?php require('caesar.php'); ?>
 <?php require('vigenere.php'); ?>
 <?php require('parameters.php'); ?>
+<?php include_once('sanitize.php'); ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -29,8 +31,8 @@
 
 				<fieldset class='radios'>
 		            <legend>Select your cipher</legend>
-		            <label><input type='radio' name='cipher' value='caesar'> Hail, Caesar!</label>
-		            <label><input type='radio' name='cipher' value='vigenere'> Vigenere, si'l vouz plait!</label>
+		            <label><input type='radio' name='cipher' value='caesar' id = 'caesar'> Hail, Caesar!</label>
+		            <label><input type='radio' name='cipher' value='vigenere' id = 'vigenere'> Vigenere, si'l vouz plait!</label>
         		</fieldset>
 
 				<br>

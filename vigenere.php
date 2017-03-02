@@ -1,6 +1,6 @@
 <?php
 
-//require('toolsOriginal.php');
+include_once('sanitize.php');
 
 function vigenere($plaintext, $key){
 
